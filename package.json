@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@vitejs/plugin-vue": "^5.2.0",
+    "@vitest/coverage-v8": "^2.1.5",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.5"
+  },
+  "scripts": {
+    "test": "vitest --coverage --environment jsdom",
+    "dev":"vite",
+    "build":"vite build",
+    "preview": "vite preview"
+  }
+}

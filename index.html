@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sup de cuisine</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./icones/search.svg" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/0ed4d5c1f3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="search_image">
+            <div>
+                <img src="./images/Recette01.webp" alt="Image d'une recette">
+                <div>
+                    <h1>Cherchez parmi plus de 1500 recettes du quotidien, simples et généreuses</h1>
+                    <div class="search_box" id="search_box">
+                        <input id="big_search" placeholder="Recherchez une recette, un ingrédient, ..." aria-label="Recherche">
+                        <button aria-label="Rechercher"><img src="./icones/search.svg" alt="Bouton rechercher"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="filtre">
+            <div class="fieldsetDiv">
+                <div>
+                    <fieldset>
+                        <legend id="button_select_1">Appareils<i class="fa fa-arrow-down"></i></legend>
+                        <div class="fieldset_content">
+                            <input id="searchappareils" type="text" placeholder="Recherchez" aria-label="Rechercher un appareil"><br>
+                            <div id="appareilsList">
+                                <!-- Liste des filtres générée par JavaScript -->
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend id="button_select_2">Ingrédients<i class="fa fa-arrow-down"></i></legend>
+                        <div class="fieldset_content">
+                            <input id="searchingredients" type="text" placeholder="Recherchez" aria-label="Rechercher un ingrédient"><br>
+                            <div id="ingredientsList">
+                                <!-- Liste des filtres générée par JavaScript -->
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend id="button_select_3">Ustensiles<i class="fa fa-arrow-down"></i></legend>
+                        <div class="fieldset_content">
+                            <input id="searchustensiles" type="text" placeholder="Recherchez" aria-label="Rechercher un ustensile"><br>
+                            <div id="ustensilesList">
+                                <!-- Liste des filtres générée par JavaScript -->
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div id="numberOfRecipes" aria-live="polite">
+                <!-- Compteur de recettes -->
+            </div>
+        </section>
+        <section class="filtreList" id="filterList" aria-label="Filtres sélectionnés">
+            <!-- Listes des filtres sélectionnés -->
+        </section>
+        <section class="list_recettes" id="recipesListContainer" aria-label="Liste des recettes">
+            <!-- Liste des recettes générée par JavaScript -->
+        </section>
+    </main>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

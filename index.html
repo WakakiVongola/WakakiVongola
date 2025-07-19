@@ -1,88 +1,74 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sup de cuisine</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="./icones/search.svg" type="image/x-icon">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/0ed4d5c1f3.js" crossorigin="anonymous"></script>
+    <title>(WIP)Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
-    <main>
-        <section class="search_image">
-            <div>
-                <img src="./images/Recette01.webp" alt="Image d'une recette">
-                <div>
-                    <h1>Cherchez parmi plus de 1500 recettes du quotidien, simples et généreuses</h1>
-                    <div class="search_box" id="search_box">
-                        <input id="big_search" placeholder="Recherchez une recette, un ingrédient, ..." aria-label="Recherche">
-                        <button aria-label="Rechercher"><img src="./icones/search.svg" alt="Bouton rechercher"></button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="filtre">
-            <div class="fieldsetDiv">
-                <div>
-                    <fieldset>
-                        <legend id="button_select_1">Appareils<i class="fa fa-arrow-down"></i></legend>
-                        <div class="fieldset_content">
-                            <input id="searchappareils" type="text" placeholder="Recherchez" aria-label="Rechercher un appareil"><br>
-                            <div id="appareilsList">
-                                <!-- Liste des filtres générée par JavaScript -->
-                            </div>
-                        </div>
-                    </fieldset>
-                </div>
-                <div>
-                    <fieldset>
-                        <legend id="button_select_2">Ingrédients<i class="fa fa-arrow-down"></i></legend>
-                        <div class="fieldset_content">
-                            <input id="searchingredients" type="text" placeholder="Recherchez" aria-label="Rechercher un ingrédient"><br>
-                            <div id="ingredientsList">
-                                <!-- Liste des filtres générée par JavaScript -->
-                            </div>
-                        </div>
-                    </fieldset>
-                </div>
-                <div>
-                    <fieldset>
-                        <legend id="button_select_3">Ustensiles<i class="fa fa-arrow-down"></i></legend>
-                        <div class="fieldset_content">
-                            <input id="searchustensiles" type="text" placeholder="Recherchez" aria-label="Rechercher un ustensile"><br>
-                            <div id="ustensilesList">
-                                <!-- Liste des filtres générée par JavaScript -->
-                            </div>
-                        </div>
-                    </fieldset>
-                </div>
-            </div>
-            <div id="numberOfRecipes" aria-live="polite">
-                <!-- Compteur de recettes -->
-            </div>
-        </section>
-        <section class="filtreList" id="filterList" aria-label="Filtres sélectionnés">
-            <!-- Listes des filtres sélectionnés -->
-        </section>
-        <section class="list_recettes" id="recipesListContainer" aria-label="Liste des recettes">
-            <!-- Liste des recettes générée par JavaScript -->
-        </section>
-    </main>
-    <script type="module" src="main.js"></script>
-</body>
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#stack">Stack technique</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#travaux">Travaux récents</a></li>
+        <li><a href="#contact">Me contacter</a></li>
+    </ul>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/aaron-tiavinjanahary-sdvrennes/" target="_blank" class="social-btn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.behance.net/tonprofil" target="_blank" class="social-btn">
+            <i class="fab fa-behance"></i>
+        </a>
+        <a href="https://twitter.com/tonprofil" target="_blank" class="social-btn">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+</nav>
 
+<main class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Tiavinjanahary Aaron (WIP)</h1>
+            <p>
+                Bonjour à toi, jeune entrepreneur ! <br/>
+                Qui suis-je ? La question est vite répondue : je suis testeur et développeur fullstack, passionné par le code. Mais j’ai plus d’un tour dans mon sac : un peu de réseau, de gestion de projet… et plus encore ! <br/>
+                Je t'invite à découvrir mes petits projets un peu plus bas, et si tu veux en savoir plus — ou juste discuter tech — n'hésite pas à me contacter. <br/>
+                Sur ce… ciao !
+            </p>
+            <button id="btn_gotolinkedin" class="cta" onclick="window.open('https://www.linkedin.com/in/aaron-tiavinjanahary-sdvrennes/', '_blank')">
+                Mon LinkedIn →
+            </button>
+
+        </div>
+        <div class="hero-image">
+            <img src="assets/profile.jpg" alt="Your photo">
+        </div>
+    </div>
+</main>
+
+<section id="stack" class="stack">
+    <h2>Ma stack technique</h2>
+<!--    select the stack -->
+    <div>
+        <ul class="stack-selector">
+            <li data-category="front" class="active">Front</li>
+            <li data-category="back">Back</li>
+            <li data-category="bdd">Base de données</li>
+            <li data-category="orm">ORM</li>
+            <li data-category="test">Test</li>
+        </ul>
+    </div>
+    <div id="stack_carousel" class="carousel">
+<!-- default is front -->
+<!--//            if selected stack == front back bdd orm or test-->
+<!--//            create a carousel with logo and name of the tech -->
+
+    </div>
+</section>
+</body>
+<script type="module" src="scripts/stack.js"></script>
 </html>

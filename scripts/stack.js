@@ -9,7 +9,6 @@ async function renderCategory(category) {
         const techList = await response.json();
         if (techList !== undefined){
             techList.forEach(tech => {
-                console.log(tech);
                 const card = document.createElement("div");
                 card.className = "tech-card";
                 card.innerHTML = `
@@ -26,8 +25,8 @@ async function renderCategory(category) {
     }
 }
 
-// Initialisation (catégorie par défaut : front)
-renderCategory("front");
+// Initialisation (catégorie par défaut : web)
+renderCategory("web");
 
 // Gestion des clics
 categoryItems.forEach(item => {

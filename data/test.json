@@ -1,5 +1,5 @@
 [
-  { "name": "Selenium", "logo": "assets/mysql.png" },
-  { "name": "Appium", "logo": "assets/postgresql.png" },
+  { "name": "Selenium", "logo": "assets/selenium.png" },
+  { "name": "Appium", "logo": "assets/appium.png" },
   { "name" : "Jmeter", "logo": "assets/jmeter.png"}
 ]

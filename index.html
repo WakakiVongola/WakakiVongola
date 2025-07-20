@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>(WIP)Mon Portfolio</title>
+    <title>TA - Mon Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -14,17 +15,17 @@
         <li><a href="#stack">Stack technique</a></li>
         <li><a href="#parcours">Parcours</a></li>
         <li><a href="#travaux">Travaux récents</a></li>
-        <li><a href="#contact">Me contacter</a></li>
+        <li><a href="#certification">Réussites et certificats</a></li>
     </ul>
     <div class="social-icons">
         <a href="https://www.linkedin.com/in/aaron-tiavinjanahary-sdvrennes/" target="_blank" class="social-btn">
             <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="https://www.behance.net/tonprofil" target="_blank" class="social-btn">
-            <i class="fab fa-behance"></i>
+        <a href="https://github.com/WakakiVongola" target="_blank" class="social-btn">
+            <i class="fab fa-github"></i>
         </a>
-        <a href="https://twitter.com/tonprofil" target="_blank" class="social-btn">
-            <i class="fab fa-twitter"></i>
+        <a href="mailto:tiavinjanahary.aaron@gmail.com" target="_blank" class="social-btn">
+            <i class="fa-solid fa-envelope"></i>
         </a>
     </div>
 </nav>
@@ -32,7 +33,7 @@
 <main class="hero">
     <div class="hero-content">
         <div class="hero-text">
-            <h1>Tiavinjanahary Aaron (WIP)</h1>
+            <h1>Tiavinjanahary Aaron</h1>
             <p>
                 Bonjour à toi, jeune entrepreneur ! <br/>
                 Qui suis-je ? La question est vite répondue : je suis testeur et développeur fullstack, passionné par le code. Mais j’ai plus d’un tour dans mon sac : un peu de réseau, de gestion de projet… et plus encore ! <br/>
@@ -50,25 +51,55 @@
     </div>
 </main>
 
-<section id="stack" class="stack">
+<section id="stack" class="section stack">
     <h2>Ma stack technique</h2>
 <!--    select the stack -->
     <div>
         <ul class="stack-selector">
-            <li data-category="front" class="active">Front</li>
-            <li data-category="back">Back</li>
-            <li data-category="bdd">Base de données</li>
-            <li data-category="orm">ORM</li>
+            <li data-category="web" class="active">Web</li>
+            <li data-category="mobile">Mobile</li>
             <li data-category="test">Test</li>
+            <li data-category="autres">Autres</li>
         </ul>
     </div>
     <div id="stack_carousel" class="carousel">
-<!-- default is front -->
-<!--//            if selected stack == front back bdd orm or test-->
-<!--//            create a carousel with logo and name of the tech -->
-
+<!--    js stack works here     -->
     </div>
 </section>
+<section id="parcours">
+    <h2>Parcours</h2>
+    <div id="timeline" class="timeline">
+<!--    todo : verbesser ui     -->
+<!--    js timeline works here  -->
+    </div>
+</section>
+<section id="travaux" class="travaux">
+    <h2>Travaux récents</h2>
+    <div id="travaux_carousel" class="carousel">
+<!--    js mes travaux récent -->
+    </div>
+</section>
+<section id="certification" class="certification">
+    <h2>Réussites et certificats</h2>
+    <div id="certifications_list">
+<!--    js certificats récent -->
+    </div>
+</section>
+
+<footer id="footer" class="footer">
+    <div class="footer-content">
+        <p>© 20/07/2025 Tiavinjanahary Aaron – Portfolio personnel. Certaines images peuvent être la propriété de tiers.</p>
+        <p>Conçu avec 💻 HTML, CSS, JS – Hébergé sur Github Pages</p>
+        <div class="footer-links">
+            <a href="mailto:tiavinjanahary.aaron@gmail.com">Me contacter</a>
+            <a href="assets/CV_Aaron_2025.pdf" target="_blank">Voir mon CV</a>
+            <a href="#">Retour en haut ↑</a>
+        </div>
+    </div>
+</footer>
 </body>
 <script type="module" src="scripts/stack.js"></script>
+<script type="module" src="scripts/timeline.js"></script>
+<script type="module" src="scripts/travaux.js"></script>
+<script type="module" src="scripts/certifications.js"></script>
 </html>

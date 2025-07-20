@@ -1,0 +1,6 @@
+[
+  { "name": "Vue.js", "logo": "assets/vuejs.png" },
+  { "name": "Next.js", "logo": "assets/nextjs.png" },
+  { "name": "Symfony", "logo": "assets/symfony.png"},
+  { "name": "Node", "logo": "assets/nodejs.png"}
+]

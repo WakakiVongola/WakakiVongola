@@ -300,3 +300,37 @@ j'aime l'idée mais je veux que si il y a du hidden le carousel bouge de gauche 
     font-size: 0.85rem;
     color: #bbb;
 }
+/*footer */
+.footer {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-top: 3rem;
+}
+
+.footer a {
+    color: #1ec11e;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #0e5a0e;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}

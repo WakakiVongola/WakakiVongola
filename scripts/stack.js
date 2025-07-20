@@ -9,7 +9,6 @@ async function renderCategory(category) {
         const techList = await response.json();
         if (techList !== undefined){
             techList.forEach(tech => {
-                console.log(tech);
                 const card = document.createElement("div");
                 card.className = "tech-card";
                 card.innerHTML = `

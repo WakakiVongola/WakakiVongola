@@ -1,0 +1,44 @@
+[
+  {
+    "image": "assets/supdecuisine.png",
+    "url": "https://aaron-supdecuisine.netlify.app",
+    "title": "Sup de cuisine",
+    "description": "Un site web pour rechercher des recettes de cuisines"
+  },
+  {
+    "image": "assets/cynait.jpg",
+    "url": "https://github.com/TeddyPrivat/cyna_it_front",
+    "title": "Cyna IT e-commerce",
+    "description": "Un site web e-commerce de solution de cyber-sécurité"
+  },
+  {
+    "image": "assets/laravel.png",
+    "url": "https://github.com/Romain-Ki/multi-tenant-app",
+    "title": "Multi tenant app",
+    "description": "White label d'application de mutuelles multi tenant"
+  },
+  {
+    "image": "assets/nodejs.png",
+    "url": "https://github.com/WakakiVongola/api_gestion_salle",
+    "title": "Api Gestion de salle",
+    "description": "Un backend Node.js pour gérer des salles de réunion"
+  },
+  {
+    "image": "assets/unity.png",
+    "url": "https://github.com/WakakiVongola/a_maze_ingu",
+    "title": "A maze ingu",
+    "description": "Jeu de labyrinthe développé sur Unity"
+  },
+  {
+    "image": "assets/swift.png",
+    "url": "https://github.com/WakakiVongola",
+    "title": "Asian street food",
+    "description": "Une application Swift pour iOS qui affiche le menu d'un restaurant"
+  },
+  {
+    "image": "assets/kotlin.png",
+    "url": "https://github.com/WakakiVongola",
+    "title": "YuGiOh",
+    "description": "Une application Kotlin pour Android qui affiche des cartes YuGiOh via une API"
+  }
+]

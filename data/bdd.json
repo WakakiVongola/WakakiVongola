@@ -1,0 +1,4 @@
+[
+  { "name": "MySQL", "logo": "assets/mysql.png" },
+  { "name": "NoSQL", "logo": "assets/nosql.png" }
+]

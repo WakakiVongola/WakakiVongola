@@ -26,8 +26,8 @@ async function renderCategory(category) {
     }
 }
 
-// Initialisation (catégorie par défaut : front)
-renderCategory("front");
+// Initialisation (catégorie par défaut : web)
+renderCategory("web");
 
 // Gestion des clics
 categoryItems.forEach(item => {

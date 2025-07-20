@@ -1,0 +1,6 @@
+[
+  { "name": "Python", "logo": "assets/python.png"},
+  { "name": "JavaScript", "logo": "assets/javascript.png" },
+  { "name": "Java", "logo": "assets/java.png"},
+  { "name": "Unity", "logo": "assets/unity.png"}
+]
